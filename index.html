@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.content {
+			width: 248px;
+		}
+		.box {
+			width: 40px;
+			height: 20px;
+			border: 1px solid #000;
+			margin-bottom: 20px;
+		}
+		.box:first-child {
+			margin-left: 21px;
+		}
+		.box-right {
+			float: right;
+		}
+		.box-left {
+			float: left;
+		}
+		.arrow {
+			width: 40px;
+			height: 10px;
+			border-bottom: 1px solid #000;
+		}
+		.arrow.arrow-left {
+			float: right;
+		}
+		.arrow.arrow-right {
+			float: left;
+		}
+		.arrow .arrow-head {
+			width: 6px;
+			height: 6px;
+			margin-top: 7px;
+		}
+		.arrow-left .arrow-head {
+			border-top: 1px solid #000;
+			border-left: 1px solid #000;
+			transform:rotate(-45deg);
+			float: left;
+			margin-left: 1px;
+		}
+		.arrow-right .arrow-head {
+			border-top: 1px solid #000;
+			border-right: 1px solid #000;
+			transform:rotate(45deg);
+			float: right;
+			margin-right: 1px;
+		}
+		.arrow-curved {
+			width: 20px;
+			height: 40px;
+			margin-top: 10px;
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
+		}
+		.arrow-curved .arrow-head {
+			width: 6px;
+			height: 6px;
+			margin-top: 37px;
+		}
+		.arrow-curved.arrow-left {
+			border-right: 1px solid #000;
+			border-radius: 0 20px 20px 0;
+			float: right;
+		}
+		.arrow-curved.arrow-right {
+			border-left: 1px solid #000;
+			border-radius: 20px 0 0 20px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="box box-left">1</div>
+		<div class="arrow arrow-right"><div class="arrow-head"></div></div>
+		<div class="box box-left">2</div>
+		<div class="arrow arrow-right"><div class="arrow-head"></div></div>
+		<div class="box box-left">3</div>
+		<div class="arrow-curved arrow-left"><div class="arrow-head"></div></div>
+		<div class="box box-right">4</div>
+		<div class="arrow arrow-left"><div class="arrow-head"></div></div>
+		<div class="box box-right">5</div>
+		<div class="arrow arrow-left"><div class="arrow-head"></div></div>
+		<div class="box box-right">6</div>
+		<div class="arrow-curved arrow-right"><div class="arrow-head"></div></div>
+		<div class="box box-left">7</div>
+	</div>
+</body>
+</html>
